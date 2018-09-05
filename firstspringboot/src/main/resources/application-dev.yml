@@ -1,0 +1,9 @@
+# 开发环境配置
+server:
+  port: 8082
+
+test:
+  user:
+    username: zhangsan
+    age: 34
+    toString: the age of ${test.user.username} is ${test.user.age}

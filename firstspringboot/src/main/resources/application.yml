@@ -1,0 +1,14 @@
+# ${random} ，它可以用来生成各种不同类型的随机值。
+girl:
+  name: carol
+  age: 18
+  number: ${random.int}
+  uuid: ${random.uuid}
+  max: ${random.int(10)}
+  value: ${random.value}
+  greeting: hi,i'm ${girl.name}
+
+# 该配置启用application-dev.yml的端口（开发环境）,如果不引用该配置，则默认是8080端口
+spring:
+  profiles:
+    active: dev
