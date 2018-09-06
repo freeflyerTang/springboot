@@ -1,0 +1,7 @@
+# 配置mysql的驱动类，数据库地址，数据库账号、密码信息spring:
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/sys
+    username: springbootTest
+    password: test
