@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/sys
+    username: springbootTest
+    password: test
+
+# 配置声明式事务
+mybatis:
+  mapper-locations: classpath*:mybatis/*Mapper.xml #来指明mapper的xml文件存放位置，我是放在resources/mybatis文件下的
+  type-aliases-package: com.carol.entity #来指明和数据库映射的实体的所在包
+
